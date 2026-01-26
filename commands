@@ -8,3 +8,10 @@ kitchen create --log-level=debug
 kitchen destroy
 kitchen list
 kitchen destroy
+
+
+sudo apt install -y \
+  docker-ce=5:28.0.0-1~ubuntu.24.04~noble \
+  docker-ce-cli=5:28.0.0-1~ubuntu.24.04~noble \
+  containerd.io
+
