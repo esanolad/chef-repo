@@ -1,0 +1,10 @@
+cookstyle hello.rb
+chef-apply hello.rb
+inspec exec hello_test.rb 
+kitchen --version
+kitchen init
+kitchen init --driver=kitchen-dokken --provissioner=dokken
+kitchen create --log-level=debug
+kitchen destroy
+kitchen list
+kitchen destroy

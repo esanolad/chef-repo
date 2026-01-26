@@ -1,0 +1,16 @@
+*.log
+.chef/*.pem
+.chef/encrypted_data_bag_secret
+nodes/
+clients/
+*.swp
+*~
+.rake_test_cache
+.DS_Store
+Berksfile.lock
+.berkshelf/
+cookbooks/
+tmp/
+vendor/
+.kitchen/
+.kitchen.local.yml

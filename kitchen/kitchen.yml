@@ -1,0 +1,21 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  # - name: ubuntu-24.04
+  - name: almalinux-9
+
+# transport:
+#   name: docker
+
+suites:
+  - name: default
+    run_list:
+    attributes:
+
+verifier:
+  name: inspec
