@@ -10,3 +10,11 @@ cookbook_file '/etc/motd' do
   mode '0644'
   action :create
 end
+
+cookbook_file '/etc/profile.d/motd.sh' do
+  source 'motd.sh'
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action :create
+end

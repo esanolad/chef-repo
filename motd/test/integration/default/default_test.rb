@@ -7,3 +7,12 @@ describe file('/etc/motd') do
   it { should be_file }
   its('content') { should match /.+/ }
 end
+
+describe file('/etc/profile.d/motd.sh') do
+  it { should be_file }
+  # its('content') { should match /cat \/etc\/motd/ }
+end
+
+describe command('bash -c "source /etc/profile.d/motd.sh && motd"') do
+  its('stdout') { should match /.+/ }
+end

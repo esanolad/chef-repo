@@ -1,6 +1,11 @@
 cookstyle hello.rb
+
 chef-apply hello.rb
+chef generate cookbook my_cookbook
+chef generate file hello.rb
+
 inspec exec hello_test.rb 
+
 kitchen --version
 kitchen init
 kitchen init --driver=kitchen-dokken --provissioner=dokken
@@ -11,10 +16,11 @@ kitchen destroy
 kitchen login
 kitchen converge
 kitchen verify
+kitchen test
 
 /opt/chef/bin/ohai
 
-chef generate cookbook my_cookbook
+
 
 
 sudo apt install -y \
