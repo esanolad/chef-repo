@@ -1,0 +1,26 @@
+---
+driver:
+  name: dokken
+  chef_version: latest
+
+transport:
+  name: dokken
+
+provisioner:
+  name: dokken
+
+platforms:
+  - name: centos8
+    driver:
+      image: centos:8
+
+verifier:
+  name: inspec
+suites:
+  - name: default
+    run_list:
+      - recipe[motd::default]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes: 

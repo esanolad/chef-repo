@@ -8,6 +8,13 @@ kitchen create --log-level=debug
 kitchen destroy
 kitchen list
 kitchen destroy
+kitchen login
+kitchen converge
+kitchen verify
+
+/opt/chef/bin/ohai
+
+chef generate cookbook my_cookbook
 
 
 sudo apt install -y \
