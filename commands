@@ -3,6 +3,10 @@ cookstyle hello.rb
 chef-apply hello.rb
 chef generate cookbook my_cookbook
 chef generate file hello.rb
+chef generate generator
+chef generate generator my_generator
+chef generate recipe my_cookbook my_recipe
+chef generate attribute my_cookbook my_attribute
 
 inspec exec hello_test.rb 
 
